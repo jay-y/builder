@@ -14,7 +14,7 @@ class Builder:
 
     def read_config(self):  # 读取配置
         if None == self.const_config:
-            config_path = 'config.json'
+            config_path = os.getcwd() + '/assets/config.json'
             if os.path.exists(config_path):
                 with open(config_path) as fp:
                     self.const_config = json.load(fp)

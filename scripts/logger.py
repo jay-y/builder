@@ -23,7 +23,9 @@ class Logger:
     #     self.logger.addHandler(fh)
 
     def __init__(self):
-        fileConfig('logger.conf')
+        config_path = os.getcwd() + '/assets/logger.conf'
+        print config_path
+        fileConfig(config_path)
         self.logger = logging.getLogger()
 
     def debug(self, message):
