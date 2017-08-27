@@ -1,0 +1,35 @@
+{
+    "author": "Jay-Y",
+    "version": "1.0.0",
+    "read_path": "/Users/Creater/WorkSpace/3ICOProj/trunk/",
+    "out_path": "/Users/Creater/WorkSpace/PythonProjects/3ICOProj/",
+    "create": [
+        {
+            "name": "processor/logs",
+            "is_file": false
+        },
+        {
+            "name": "README.md",
+            "is_file": true,
+            "content": "NAME:Builder\nAUTHOR:Jay-Y\nVERSION:1.0.0"
+        }
+    ],
+    "copy": [
+        {
+            "old_path": "3ico-processor/bin",
+            "new_path": "processor/bin"
+        },
+        {
+            "old_path": "3ico-processor/target/classes",
+            "new_path": "processor/classes"
+        },
+        {
+            "old_path": "3ico-processor/target/dependency",
+            "new_path": "processor/lib"
+        },
+        {
+            "old_path": "3ico-web/target/ROOT.war",
+            "new_path": "ROOT.war"
+        }
+    ]
+}
